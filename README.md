@@ -1,24 +1,41 @@
-# 📌 Relational Model Constraints - Proyecto Car Dealership & Human Resources DB  
+# Modelo Relacional y Constraints — Car Dealership & Human Resources DB
 
-## 📖 Descripción  
-Proyecto académico que modela bases de datos relacionales para la gestión de concesionarios de autos y recursos humanos, aplicando restricciones y normalización.
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Database](https://img.shields.io/badge/Base_de-Datos_Relacional-FF6B35?style=for-the-badge)
+![Normalization](https://img.shields.io/badge/Normalización-3FN-8E24AA?style=for-the-badge)
 
-## 🛠️ Funcionalidades  
-- Diseño y normalización de bases de datos.  
-- Implementación de claves primarias y foráneas.  
-- Creación de vistas y procedimientos almacenados.  
-- Optimización de consultas para reportes de negocio.  
+> Diseño e implementación propios de bases de datos relacionales para dos dominios de negocio: concesionario automotriz y recursos humanos.
 
-## 🚀 Tecnologías utilizadas  
-- MySQL  
-- SQL Server  
-- Workbench  
-- PostgreSQL  
+## Descripción
 
-## ▶️ Cómo ejecutar el proyecto  
-1. Crear la base de datos en MySQL o PostgreSQL.  
-2. Ejecutar los scripts SQL proporcionados.  
-3. Probar consultas y reportes en un cliente SQL.  
+Proyecto desarrollado por **Alejandro De Mendoza** que aplica el modelo relacional sobre dos dominios de negocio reales: un **concesionario de automóviles** y un sistema de **recursos humanos**. Se implementa el diseño completo desde el DER hasta el DDL en SQL, con normalización a 3FN, restricciones de integridad referencial y optimización de consultas para reportes de negocio.
 
-## 📌 Autor  
-👨‍💻 **Alejandro De Mendoza**
+## Dominios modelados
+
+### Concesionario automotriz
+- Entidades: Vehículo, Marca, Modelo, Cliente, Venta, Vendedor
+- Relaciones: Cliente compra Vehículo a través de Venta, Vendedor gestiona Venta
+
+### Recursos Humanos
+- Entidades: Empleado, Departamento, Cargo, Historial Salarial, Ubicación
+
+## Normalización aplicada
+
+| Forma Normal | Condición satisfecha |
+|---|---|
+| 1FN | Atributos atómicos, clave primaria definida |
+| 2FN | Dependencias totales sobre la clave primaria |
+| 3FN | Sin dependencias transitivas entre atributos no clave |
+
+## Contenido del repositorio
+
+| Archivo | Descripción |
+|---|---|
+| `HR_Database_Create_Tables_Script.sql` | DDL completo del esquema HR |
+| `*.csv` | Datos de prueba: Employees, Departments, Jobs, Locations |
+| `Activity.docx` | Enunciado y desarrollo de las actividades |
+
+## Contexto académico
+
+**Asignatura:** Bases de Datos · **Institución:** Ingeniería Informática
+**Autor:** Alejandro De Mendoza — Ingeniero Informático · Especialista en Ingeniería de Software · Máster en Arquitectura de Software

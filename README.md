@@ -48,6 +48,19 @@ Proyecto desarrollado por **Alejandro De Mendoza** que aplica el modelo relacion
 
 ---
 
+## Arquitectura
+
+```mermaid
+flowchart TD
+    A[Concesionario Automotriz] --> B[Vehiculo / Marca / Modelo / Cliente / Venta / Vendedor]
+    C[Recursos Humanos] --> D[Empleado / Departamento / Cargo / Historial Salarial]
+    B --> E[HR_Database_Create_Tables_Script.sql - DDL]
+    D --> E
+    E --> F[Normalizacion 3FN - 1FN / 2FN / 3FN]
+    F --> G[Datos CSV - Employees / Departments / Jobs / Locations]
+    G --> H[Consultas y Reportes SQL]
+```
+
 ## Autor
 
 **Alejandro De Mendoza**  

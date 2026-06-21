@@ -25,6 +25,19 @@ Proyecto desarrollado por **Alejandro De Mendoza** que aplica el modelo relacion
 ### Recursos Humanos
 - Entidades: Empleado, Departamento, Cargo, Historial Salarial, Ubicación
 
+## Arquitectura
+
+```mermaid
+flowchart TD
+    A[Concesionario Automotriz] --> B[Vehiculo / Marca / Modelo / Cliente / Venta / Vendedor]
+    C[Recursos Humanos] --> D[Empleado / Departamento / Cargo / Historial Salarial]
+    B --> E[HR_Database_Create_Tables_Script.sql - DDL]
+    D --> E
+    E --> F[Normalizacion 3FN - 1FN / 2FN / 3FN]
+    F --> G[Datos CSV - Employees / Departments / Jobs / Locations]
+    G --> H[Consultas y Reportes SQL]
+```
+
 ## Normalización aplicada
 
 | Forma Normal | Condición satisfecha |
@@ -47,19 +60,6 @@ Proyecto desarrollado por **Alejandro De Mendoza** que aplica el modelo relacion
 **Autor:** Alejandro De Mendoza — Ingeniero Informático · Especialista en Ingeniería de Software · Máster en Arquitectura de Software
 
 ---
-
-## Arquitectura
-
-```mermaid
-flowchart TD
-    A[Concesionario Automotriz] --> B[Vehiculo / Marca / Modelo / Cliente / Venta / Vendedor]
-    C[Recursos Humanos] --> D[Empleado / Departamento / Cargo / Historial Salarial]
-    B --> E[HR_Database_Create_Tables_Script.sql - DDL]
-    D --> E
-    E --> F[Normalizacion 3FN - 1FN / 2FN / 3FN]
-    F --> G[Datos CSV - Employees / Departments / Jobs / Locations]
-    G --> H[Consultas y Reportes SQL]
-```
 
 ## Autor
 

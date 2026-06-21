@@ -1,3 +1,5 @@
+<div align="center">
+
 # Modelo Relacional y Constraints — Car Dealership & Human Resources DB
 
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
@@ -7,6 +9,10 @@
 > Diseño e implementación propios de bases de datos relacionales para dos dominios de negocio: concesionario automotriz y recursos humanos.
 
 ## Descripción
+
+</div>
+
+---
 
 Proyecto desarrollado por **Alejandro De Mendoza** que aplica el modelo relacional sobre dos dominios de negocio reales: un **concesionario de automóviles** y un sistema de **recursos humanos**. Se implementa el diseño completo desde el DER hasta el DDL en SQL, con normalización a 3FN, restricciones de integridad referencial y optimización de consultas para reportes de negocio.
 
@@ -39,3 +45,12 @@ Proyecto desarrollado por **Alejandro De Mendoza** que aplica el modelo relacion
 
 **Asignatura:** Bases de Datos · **Institución:** Ingeniería Informática
 **Autor:** Alejandro De Mendoza — Ingeniero Informático · Especialista en Ingeniería de Software · Máster en Arquitectura de Software
+
+---
+
+## Autor
+
+**Alejandro De Mendoza**  
+Ingeniero Informático · Especialista en IA · Especialista en Ingeniería de Software · Máster en Arquitectura de Software
+
+[![GitHub](https://img.shields.io/badge/GitHub-AlejoTechEngineer-181717?style=for-the-badge&logo=github)](https://github.com/AlejoTechEngineer)
